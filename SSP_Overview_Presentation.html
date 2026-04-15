@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台灣 SSP 總覽 — 2026 Q1 服務商圓桌會議</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--sq:#161D26;--or:#FF6200;--ow:#F5F3EF;--wh:#FFF;--g6:#6B7280;--g4:#9CA3AF;--gn:#16A34A;--rd:#DC2626;--bl:#0099E5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC','Segoe UI',system-ui,sans-serif;background:#000;overflow:hidden;width:100vw;height:100vh}
+.deck{position:relative;width:100vw;height:100vh}
+.slide{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;pointer-events:none;padding:60px 80px;overflow:hidden;transition:none;transform:translateX(50px)}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto}
+.bg-dk{background:var(--sq);color:var(--wh)}
+.bg-gr{background:linear-gradient(135deg,var(--sq) 0%,#1e2d3d 50%,#2a3a4e 100%);color:var(--wh)}
+.bg-rd{background:radial-gradient(ellipse at 30% 50%,#1e2d3d 0%,var(--sq) 70%);color:var(--wh)}
+h1{font-size:48px;font-weight:900;line-height:1.15;margin-bottom:12px}
+h2{font-size:38px;font-weight:900;line-height:1.2;margin-bottom:10px}
+h3{font-size:24px;font-weight:700}
+.sub{font-size:20px;font-weight:400;opacity:.75;line-height:1.5}
+.or{color:var(--or)}
+.bar{position:absolute;bottom:0;left:0;right:0;height:5px;background:var(--or)}
+.sn{position:absolute;bottom:24px;right:36px;font-size:13px;color:var(--g4);font-weight:500}
+.prog{position:fixed;top:0;left:0;height:3px;background:var(--or);transition:width .4s;z-index:100}
+.hint{position:fixed;bottom:10px;left:50%;transform:translateX(-50%);font-size:11px;color:var(--g4);opacity:.4;z-index:100}
+.tag{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:5px 14px;border-radius:20px;margin-bottom:16px}
+.to{background:var(--or);color:var(--wh)}
+.sh{position:absolute;border-radius:50%;opacity:.06;pointer-events:none}
+.s1{width:400px;height:400px;background:var(--or);top:-120px;right:-100px}
+.s2{width:250px;height:250px;background:var(--or);bottom:-60px;left:-60px}
+.ctr{text-align:center}
+.phase-row{display:flex;gap:20px;width:100%;margin-top:28px}
+.phase{flex:1;border-radius:14px;padding:22px 20px;position:relative;overflow:hidden}
+.phase .yr{font-size:18px;font-weight:700;letter-spacing:1.5px;opacity:.5;margin-bottom:6px}
+.phase h4{font-size:28px;font-weight:700;margin-bottom:10px}
+.phase p{font-size:20px;line-height:1.6;opacity:.7}
+.p1{background:rgba(255,98,0,.12);border:1px solid rgba(255,98,0,.25)}
+.p2{background:rgba(0,153,229,.1);border:1px solid rgba(0,153,229,.2)}
+.p3{background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.2)}
+[data-step]{transition:opacity .5s ease,transform .5s ease}
+[data-step].visible{opacity:1!important;transform:translateY(0)!important}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:16px 18px;display:flex;gap:12px;align-items:flex-start}
+.card .ic{font-size:25px;flex-shrink:0;margin-top:2px}
+.card h4{font-size:28px;font-weight:700;margin-bottom:6px}
+.card p{font-size:13px;opacity:.6;line-height:1.55}
+.trend{flex:1;border-radius:14px;padding:24px 22px;text-align:left}
+.trend .ic{font-size:48px;margin-bottom:10px}
+.trend h4{font-size:28px;font-weight:700;margin-bottom:10px}
+.trend p{font-size:20px;line-height:1.6;opacity:.7}
+</style>
+</head>
+<body>
+<div class="prog" id="p"></div>
+<div class="hint">← → 切換頁面 ｜ F 全螢幕</div>
+<div class="deck">
+
+<!-- S1 封面 -->
+<div class="slide bg-gr active" data-slide="1">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div class="ctr" style="max-width:900px;position:relative;z-index:1">
+  <div class="tag to" style="font-size:29px;padding:8px 22px">2026 Q1 服務商圓桌會議</div>
+  <br>
+  <h1 style="font-size:52px">共建跨境電商成長飛輪<br>助台灣品牌<span class="or">跨境全世界</span></h1>
+  <div style="margin-top:32px;font-size:22px;opacity:.7;line-height:1.8;text-align:left;width:100%">
+    <p>亞馬遜全球開店</p>
+    <p>台灣區域拓展總監 Phoebe Chang</p>
+  </div>
+</div>
+<div class="bar"></div><span class="sn">1 / 18</span>
+</div>
+
+<!-- S2 議程 -->
+<div class="slide bg-dk" data-slide="2">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="text-align:center;position:relative;z-index:1">
+  <h2 style="margin-bottom:24px;font-size:30px">議程</h2>
+  <table style="width:100%;max-width:1200px;border-collapse:collapse;border-radius:12px;overflow:hidden;font-size:16px;white-space:nowrap;border:1px solid rgba(255,255,255,.2);text-align:left">
+    <thead>
+      <tr style="background:var(--or);color:var(--wh)">
+        <th style="padding:14px 20px;text-align:left;font-weight:700">時間</th>
+        <th style="padding:14px 20px;text-align:left;font-weight:700">議程</th>
+        <th style="padding:14px 20px;text-align:left;font-weight:700">講者</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:rgba(255,255,255,.05)">
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">10:00 ~ 10:03</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">開場</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">亞馬遜全球開店 I 台灣區域拓展團隊負責人 Phoebe Chang</td>
+      </tr>
+      <tr>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">10:03 ~ 10:06</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">歡迎致詞</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">亞馬遜全球開店 I 亞太區業務負責人 Daniel Qiu</td>
+      </tr>
+      <tr style="background:rgba(255,255,255,.05)">
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">10:06 ~ 10:10</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">歡迎致詞</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">亞馬遜全球開店 I 台灣總經理 Paloma Hsieh</td>
+      </tr>
+      <tr>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">10:10 ~ 10:20</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">台灣服務商網絡介紹</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">亞馬遜全球開店 I 台灣資深區域拓展經理 Sannie Lee</td>
+      </tr>
+      <tr style="background:rgba(255,255,255,.05)">
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">10:20 ~ 11:00</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">服務商自介</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">服務商</td>
+      </tr>
+      <tr>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">11:00 ~ 11:50</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">議題討論與交流</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">亞馬遜全球開店 x 服務商</td>
+      </tr>
+      <tr style="background:rgba(255,255,255,.05)">
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">11:50 ~ 12:00</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)">總結以及拍照</td>
+        <td style="padding:12px 20px;border:1px solid rgba(255,255,255,.2)"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="bar"></div><span class="sn">2 / 18</span>
+</div>
+
+<!-- S3 歡迎致詞 DQ -->
+<div class="slide bg-gr" data-slide="3">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div class="ctr" style="max-width:900px;position:relative;z-index:1">
+  <h1 style="font-size:52px">🎤 歡迎<span class="or">致詞</span></h1>
+  <p style="font-size:36px;margin-top:20px;opacity:.85;line-height:1.6">亞馬遜全球開店 亞太區業務負責人</p>
+  <p style="font-size:48px;font-weight:900;margin-top:16px;color:var(--or)">Daniel Qiu</p>
+</div>
+<div class="bar"></div><span class="sn">3 / 18</span>
+</div>
+
+<!-- S4 歡迎致詞 Paloma -->
+<div class="slide bg-dk" data-slide="4">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div class="ctr" style="max-width:900px;position:relative;z-index:1">
+  <h1 style="font-size:52px">🎤 歡迎<span class="or">致詞</span></h1>
+  <p style="font-size:36px;margin-top:20px;opacity:.85;line-height:1.6">亞馬遜全球開店 台灣總經理</p>
+  <p style="font-size:48px;font-weight:900;margin-top:16px;color:var(--or)">Paloma Hsieh</p>
+</div>
+<div class="bar"></div><span class="sn">4 / 18</span>
+</div>
+
+<!-- S5 Section Title -->
+<div class="slide bg-rd" data-slide="5">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div class="ctr" style="max-width:900px;position:relative;z-index:1">
+  <h1 style="font-size:48px;line-height:1.3">台灣服務商網絡<br><span class="or">一起走過的路，一起面對的挑戰</span></h1>
+  <p style="font-size:22px;opacity:.7;margin-top:60px">台灣資深區域拓展經理 Sannie Lee</p>
+</div>
+<div class="bar"></div><span class="sn">5 / 18</span>
+</div>
+
+<!-- S6 台灣服務商網絡 -->
+<div class="slide bg-dk" data-slide="6">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1100px;position:relative;z-index:1">
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">台灣<span class="or">服務商網絡</span></h2>
+  <p class="sub" data-step="0" style="max-width:700px;opacity:0;transform:translateY(18px)">108 家服務商橫跨 12 個服務領域</p>
+  <div class="phase-row">
+    <div class="phase p1" data-step="1" style="opacity:0;transform:translateY(18px)">
+      <div class="yr">2017 – 2020</div>
+      <h4>🏗️ 奠基期</h4>
+      <p>從物流起步，解決賣家最不熟悉的 FBA 頭程物流痛點。</p>
+    </div>
+    <div class="phase p2" data-step="2" style="opacity:0;transform:translateY(18px)">
+      <div class="yr">2021 – 2023</div>
+      <h4>🚀 擴展期</h4>
+      <p>多站點、合規、VAT、海外倉。規模擴展至 71+ 家服務商。</p>
+    </div>
+    <div class="phase p3" data-step="3" style="opacity:0;transform:translateY(18px)">
+      <div class="yr">2023 – 至今</div>
+      <h4>🤝 夥伴期</h4>
+      <p>共同推動服務商網路的品質與能力提升——跨境電商技能認證(IEAT)、服務商服務品質調查、SSP 年度獎項等。</p>
+    </div>
+  </div>
+</div>
+<div class="bar"></div><span class="sn">6 / 18</span>
+</div>
+
+<!-- S7 共同成果 -->
+<div class="slide bg-gr" data-slide="7">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1100px;position:relative;z-index:1">
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">我們<span class="or">共同建構的成果</span></h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;width:100%;margin-top:18px">
+    <div class="card" data-step="1" style="opacity:0;transform:translateY(18px)">
+      <div class="ic">💰</div>
+      <div>
+        <h4>完整的跨境電商<br>服務圈</h4>
+        <p>SEND AIR（2024）、SEND EXPRESS 及 SEND SEA（2025）上線降低頭程運費；品牌營運服務商提供上架、KOL、陪跑等多元方案，解決賣家人力與能力缺口，對應各階段營運痛點。</p>
+      </div>
+    </div>
+    <div class="card" data-step="2" style="opacity:0;transform:translateY(18px)">
+      <div class="ic">🏛️</div>
+      <div>
+        <h4>政府補助專案</h4>
+        <p>8 家服務商擔任政府補助計畫承辦商，協助賣家降低成本加速啟動。</p>
+      </div>
+    </div>
+    <div class="card" data-step="3" style="opacity:0;transform:translateY(18px)">
+      <div class="ic">🤖</div>
+      <div>
+        <h4>AI 創新先行</h4>
+        <p>台灣服務商開發出具競爭力的 AI 工具，提升營運效率與服務價值。</p>
+      </div>
+    </div>
+    <div class="card" data-step="4" style="opacity:0;transform:translateY(18px)">
+      <div class="ic">🎪</div>
+      <div>
+        <h4>亞馬遜 Mega Event</h4>
+        <p>服務商以贊助商、講師及展商身份共同推廣，為賣家打造豐富的學習議程以及觀展體驗。</p>
+      </div>
+    </div>
+    <div class="card" data-step="5" style="opacity:0;transform:translateY(18px)">
+      <div class="ic">🤝</div>
+      <div>
+        <h4>服務商合作</h4>
+        <p>透過圓桌會議促進跨服務商合作與培訓。2025 年首次進行服務品質調查並分享結果，推動服務商持續提升服務。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bar"></div><span class="sn">7 / 18</span>
+</div>
+
+<!-- S8 市場影響力 -->
+<div class="slide bg-dk" data-slide="9">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1100px;position:relative;z-index:1;text-align:center">
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">📚 市場<span class="or">影響力</span></h2>
+  <p class="sub" data-step="0" style="opacity:0;transform:translateY(18px);margin-bottom:28px">持續擴大跨境電商認知與產業能見度</p>
+  <div data-step="1" style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;opacity:0;transform:translateY(18px)">
+    <img src="市場影響力/TransBiz 跨境電商好生意.jpg" style="height:200px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.3)" alt="TransBiz">
+    <img src="市場影響力/跨境電商學院.png" style="height:200px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.3)" alt="跨境電商學院">
+    <img src="市場影響力/Wiser socials.jpg" style="height:200px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.3)" alt="Wiser">
+    <img src="市場影響力/Ecomplus socials.jpg" style="height:200px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.3)" alt="Ecomplus">
+    <img src="市場影響力/金匯_電商快運通.jpg" style="height:200px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.3)" alt="金匯">
+  </div>
+</div>
+<div class="bar"></div><span class="sn">8 / 18</span>
+</div>
+
+<!-- S9 前方的挑戰 -->
+<div class="slide bg-dk" data-slide="9">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1100px;position:relative;z-index:1">
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">前方的<span class="or">挑戰</span></h2>
+  <div style="display:flex;gap:20px;width:100%;margin-top:24px">
+    <div class="trend" data-step="1" style="opacity:0;transform:translateY(18px);background:rgba(220,38,38,.1);border:1px solid rgba(220,38,38,.2)">
+      <div class="ic">📉</div>
+      <h4>成本上升與不確定性</h4>
+      <p>賣家面臨物流、廣告等成本上升，關稅不確定性更增添跨境營運的複雜度。</p>
+    </div>
+    <div class="trend" data-step="2" style="opacity:0;transform:translateY(18px);background:rgba(0,153,229,.1);border:1px solid rgba(0,153,229,.2)">
+      <div class="ic">🤖</div>
+      <h4>AI 正在重塑營運模式</h4>
+      <p>AI 正在改變賣家的營運方式——從 Listing 優化、廣告管理到帳號診斷與選品研究。</p>
+    </div>
+    <div class="trend" data-step="3" style="opacity:0;transform:translateY(18px);background:rgba(255,98,0,.1);border:1px solid rgba(255,98,0,.2)">
+      <div class="ic">⚡</div>
+      <h4>服務商面臨的挑戰</h4>
+      <p>人才短缺、市場拓展，以及持續強化自身營運能力的需求。</p>
+    </div>
+  </div>
+</div>
+<div class="bar"></div><span class="sn">9 / 18</span>
+</div>
+
+<!-- S9 結尾1 -->
+<div class="slide bg-rd" data-slide="9">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="text-align:center;max-width:800px;position:relative;z-index:1">
+  <p class="sub" data-step="0" style="font-size:44px;opacity:0;transform:translateY(18px);margin-bottom:24px">服務商不只是服務提供者，<br>而是與賣家和亞馬遜並肩成長的夥伴 🤝</p>
+</div>
+<div class="bar"></div><span class="sn">10 / 18</span>
+</div>
+
+<!-- S10 服務商公司介紹 -->
+<div class="slide bg-gr" data-slide="10">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div class="ctr" style="max-width:900px;position:relative;z-index:1">
+  <div style="font-size:64px;margin-bottom:20px">🏢</div>
+  <h1 style="font-size:52px" data-step="0" style="opacity:0;transform:translateY(18px)">服務商<span class="or">公司介紹</span></h1>
+</div>
+<div class="bar"></div><span class="sn">11 / 18</span>
+</div>
+
+<!-- S11 互動議題討論 -->
+<div class="slide bg-dk" data-slide="11">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div class="ctr" style="max-width:900px;position:relative;z-index:1">
+  <div style="font-size:64px;margin-bottom:20px">💬</div>
+  <h1 style="font-size:52px">互動議題<span class="or">討論</span></h1>
+</div>
+<div class="bar"></div><span class="sn">12 / 18</span>
+</div>
+
+<!-- S12 第一題 -->
+<div class="slide bg-gr" data-slide="12">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1000px;position:relative;z-index:1">
+  <div class="tag to" data-step="0" style="font-size:24px;padding:8px 22px;opacity:0;transform:translateY(18px)">第一題</div>
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">【請教<span class="or">服務商</span>】</h2>
+  <p class="sub" data-step="0" style="margin-top:16px;font-size:24px;line-height:1.7;opacity:0;transform:translateY(18px)">近期全球跨境電商環境經歷了劇烈變化——從關稅政策調整、地緣政治衝突，到由此帶來的成本上漲與市場不確定性。在這段充滿變動的時期，請分享一個您與賣家合作或團隊營運方面最有成就感的案例。</p>
+</div>
+<div class="bar"></div><span class="sn">13 / 18</span>
+</div>
+
+<!-- S13 第二題 -->
+<div class="slide bg-dk" data-slide="13">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1000px;position:relative;z-index:1">
+  <div class="tag to" data-step="0" style="font-size:24px;padding:8px 22px;opacity:0;transform:translateY(18px)">第二題</div>
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">【請教<span class="or">服務商</span>及<span class="or">亞馬遜</span>】</h2>
+  <div data-step="1" style="margin-top:20px;opacity:0;transform:translateY(18px)">
+    <h3 style="font-size:20px;margin-bottom:10px">📋 請教服務商：</h3>
+    <p style="font-size:22px;line-height:1.7;opacity:.8">根據您的觀察，過去兩年賣家面臨的痛點中，哪些是持續存在的？哪些是新出現的挑戰？這些變化如何影響您的服務策略和解決方案？另外，您觀察到賣家目前最缺、但市場上還找不太到的服務是什麼？</p>
+  </div>
+  <div data-step="2" style="margin-top:28px;opacity:0;transform:translateY(18px)">
+    <h3 style="font-size:20px;margin-bottom:10px">🔶 請教亞馬遜：</h3>
+    <p style="font-size:22px;line-height:1.7;opacity:.8">從亞馬遜的角度來看，過去兩年我們觀察到賣家痛點有哪些關鍵演變？</p>
+  </div>
+</div>
+<div class="bar"></div><span class="sn">14 / 18</span>
+</div>
+
+<!-- S14 第三題 -->
+<div class="slide bg-gr" data-slide="14">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1000px;position:relative;z-index:1">
+  <div class="tag to" data-step="0" style="font-size:24px;padding:8px 22px;opacity:0;transform:translateY(18px)">第三題</div>
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">【請教<span class="or">服務商</span>】</h2>
+  <p class="sub" data-step="0" style="margin-top:16px;font-size:24px;line-height:1.7;opacity:0;transform:translateY(18px)">作為服務商，過去兩年您在營運上遇到的挑戰有哪些？哪些挑戰與過去相似？哪些是新的挑戰？您如何調整策略來應對這些變化？</p>
+</div>
+<div class="bar"></div><span class="sn">15 / 18</span>
+</div>
+
+<!-- S15 第四題 -->
+<div class="slide bg-dk" data-slide="15">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1000px;position:relative;z-index:1">
+  <div class="tag to" data-step="0" style="font-size:24px;padding:8px 22px;opacity:0;transform:translateY(18px)">第四題</div>
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">【請教<span class="or">服務商</span>及<span class="or">亞馬遜</span>】</h2>
+  <div data-step="1" style="margin-top:20px;opacity:0;transform:translateY(18px)">
+    <h3 style="font-size:20px;margin-bottom:10px">📋 請教服務商：</h3>
+    <p style="font-size:22px;line-height:1.7;opacity:.8">您目前如何運用 AI 工具來優化與亞馬遜賣家的合作？基於您的實際經驗，AI 能為賣家帶來哪些具體改變和效益？對於貴公司而言，AI 將如何提升服務價值和營運效率？</p>
+  </div>
+  <div data-step="2" style="margin-top:28px;opacity:0;transform:translateY(18px)">
+    <h3 style="font-size:20px;margin-bottom:10px">🔶 請教亞馬遜：</h3>
+    <p style="font-size:22px;line-height:1.7;opacity:.8">從亞馬遜的角度來看，我們如何賦能賣家的 AI 營運能力？</p>
+  </div>
+</div>
+<div class="bar"></div><span class="sn">16 / 18</span>
+</div>
+
+<!-- S16 第五題 -->
+<div class="slide bg-gr" data-slide="16">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div style="width:100%;max-width:1000px;position:relative;z-index:1">
+  <div class="tag to" data-step="0" style="font-size:24px;padding:8px 22px;opacity:0;transform:translateY(18px)">第五題</div>
+  <h2 data-step="0" style="opacity:0;transform:translateY(18px)">【服務商請教<span class="or">亞馬遜</span>】</h2>
+  <div data-step="1" style="margin-top:20px;opacity:0;transform:translateY(18px)">
+    <p style="font-size:24px;line-height:1.7;opacity:.8">想了解計畫推出的廣告後台 AI 工具</p>
+  </div>
+  <div data-step="2" style="margin-top:24px;opacity:0;transform:translateY(18px)">
+    <p style="font-size:24px;line-height:1.7;opacity:.8">秩宇目前擁有多元日本實體通路管道，希望能更加落實客戶於日本 OMO 的執行，對此方式官方是否有其他建議與想法？</p>
+  </div>
+</div>
+<div class="bar"></div><span class="sn">17 / 18</span>
+</div>
+
+<!-- S17 結尾 -->
+<div class="slide bg-rd" data-slide="17">
+<div class="sh s1"></div><div class="sh s2"></div>
+<div class="ctr" style="max-width:900px;position:relative;z-index:1">
+  <p style="font-size:44px;font-weight:900;line-height:1.4;margin-bottom:20px">期待下一個九年<br>繼續並肩前行 🤝</p>
+  <p style="font-size:28px;opacity:.7">助台灣品牌<span class="or">跨境全世界</span></p>
+</div>
+<div class="bar"></div><span class="sn">18 / 18</span>
+</div>
+
+</div>
+<script>
+const S=document.querySelectorAll('.slide'),P=document.getElementById('p');
+let c=0,busy=false;
+const slideSteps=[];
+S.forEach(slide=>{
+  const els=slide.querySelectorAll('[data-step]');
+  let max=-1;
+  els.forEach(el=>{const s=parseInt(el.dataset.step);if(s>max)max=s;});
+  slideSteps.push({els,max,cur:-1});
+});
+function resetSlide(i){
+  const ss=slideSteps[i];ss.cur=-1;
+  ss.els.forEach(el=>{el.classList.remove('visible');el.style.opacity='0';el.style.transform='translateY(18px)';});
+}
+function showStep(i,step){
+  slideSteps[i].els.forEach(el=>{if(parseInt(el.dataset.step)===step)el.classList.add('visible');});
+}
+function hideStep(i,step){
+  slideSteps[i].els.forEach(el=>{if(parseInt(el.dataset.step)===step){el.classList.remove('visible');el.style.opacity='0';el.style.transform='translateY(18px)';}});
+}
+function initSlide(i){
+  const ss=slideSteps[i];
+  if(ss.max>=0){ss.cur=0;showStep(i,0);if(ss.max>=1){setTimeout(()=>{ss.cur=1;showStep(i,1);},400);}}
+}
+initSlide(0);
+function up(){P.style.width=((c+1)/S.length*100)+'%'}
+function go(n){
+  if(n<0||n>=S.length||n===c||busy)return;busy=true;
+  const fwd=n>c,o=S[c],nw=S[n];resetSlide(c);
+  nw.style.transition='none';nw.style.opacity='0';nw.style.transform=fwd?'translateX(50px)':'translateX(-50px)';
+  nw.classList.add('active');void nw.offsetWidth;
+  nw.style.transition='opacity .5s ease,transform .5s ease';nw.style.opacity='1';nw.style.transform='translateX(0)';
+  o.style.transition='opacity .5s ease,transform .5s ease';o.style.opacity='0';o.style.transform=fwd?'translateX(-50px)':'translateX(50px)';
+  setTimeout(()=>{o.classList.remove('active');o.style.transition='none';o.style.transform='translateX(50px)';o.style.opacity='0';initSlide(n);busy=false;},520);
+  c=n;up();
+}
+function advance(){const ss=slideSteps[c];if(ss.cur<ss.max){ss.cur++;showStep(c,ss.cur);return;}go(c+1);}
+function retreat(){const ss=slideSteps[c];if(ss.cur>0){hideStep(c,ss.cur);ss.cur--;return;}go(c-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();advance()}
+  if(e.key==='ArrowLeft'){e.preventDefault();retreat()}
+  if(e.key==='f'||e.key==='F'){if(!document.fullscreenElement)document.documentElement.requestFullscreen();else document.exitFullscreen()}
+});
+document.addEventListener('click',e=>{if(e.target.closest('a'))return;e.clientX/window.innerWidth<.3?retreat():advance()});
+let tx=0;
+document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX});
+document.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50){d<0?advance():retreat()}});
+up();
+</script>
+</body>
+</html>
